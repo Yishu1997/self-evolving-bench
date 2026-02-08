@@ -1,0 +1,24 @@
+# Default configuration for the self-evolving benchmark
+generation:
+  recent_context: 6        # number of recent questions to include as "avoid similar to"
+  max_regen: 6             # how many times to attempt regeneration for novelty
+  max_tokens: 700
+  temperature: 0.9
+
+answering:
+  max_tokens: 900
+  temperature: 0.2
+
+evaluation:
+  max_tokens: 700
+  temperature: 0.0
+
+novelty:
+  max_sim: 0.88            # cosine similarity threshold for TF-IDF semantic filter
+  max_history: 5000        # number of past questions to retain for similarity checks
+
+evolution:
+  window: 30               # how many recent evals to consider
+  focus_top_k_tags: 3
+  difficulty_min: 1
+  difficulty_max: 5
