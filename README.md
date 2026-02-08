@@ -143,16 +143,6 @@ self-evolving-bench/
 
 ---
 
-## Notes for Interview Discussion
-
-- EMA stabilizes noisy per-question scores.
-- Novelty uses both lexical and semantic checks.
-- “Self-evolving” is implemented as a simple, defensible curriculum:
-  - focus on error tags / weak subscores
-  - difficulty ramps with sustained performance
-
----
-
 ## License
 
 MIT
